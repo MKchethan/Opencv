@@ -22,7 +22,7 @@ def rescaleFrame(frame, scale=0.75):
 # img_resized = cv.imread('photos/cat.jpg')
 # cv.imshow('Cat', img_resized)
 # resized_img = rescaleFrame(img_resized)
-# cv.imshow("Image", resized_img)
+# cv.imshow("Resized Image", resized_img)
 # cv.waitKey(0)
 
 
@@ -32,7 +32,7 @@ capture = cv.VideoCapture('videos/dog.mp4')
 while True:
     isTrue, frame_ = capture.read()
 
-    frame_resized = rescaleFrame(frame_)
+    frame_resized = rescaleFrame(frame_, scale=0.2)
 
     cv.imshow('Video', frame_)
     cv.imshow('Video Resized', frame_resized)
@@ -40,7 +40,7 @@ while True:
     if cv.waitKey(10) & 0xFF == ord('d'):
         break
 
-capture.release()
+#capture.release()
 cv.destroyAllWindows()
 
 

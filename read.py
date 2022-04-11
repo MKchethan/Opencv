@@ -18,7 +18,7 @@ while True:
     # break from the loop.
     if isTrue:
         cv.imshow('Video', frame)
-        if cv.waitKey(20) & 0xFF == ord('d'):
+        if cv.waitKey(2) & 0xFF == ord('d'):
             break
     else:
         break
