@@ -5,8 +5,8 @@ img = cv.imread("photos/cat.jpg")
 cv.imshow("Image", img)
 
 # gray
-# gray = cv.cvtColor(chethy, cv.COLOR_BGRA2GRAY)
-# cv.imshow("Gray", gray)
+gray = cv.cvtColor(chethy, cv.COLOR_BGRA2GRAY)
+cv.imshow("Gray", gray)
 
 # blur
 blur = cv.GaussianBlur(img, (7, 7), cv.BORDER_DEFAULT)  # numbers should be odd more the no more blur it is

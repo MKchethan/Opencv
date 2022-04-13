@@ -37,6 +37,9 @@ while True:
     cv.imshow('Video', frame_)
     cv.imshow('Video Resized', frame_resized)
 
+    cv.putText(frame_, 'Hello, we are a family!!!', (0, 100), cv.FONT_HERSHEY_TRIPLEX, 1.0, (255, 0, 0), 2)
+    cv.imshow('Text', frame_)
+
     if cv.waitKey(10) & 0xFF == ord('d'):
         break
 

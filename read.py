@@ -26,3 +26,15 @@ while True:
 capture.release()
 cv.destroyAllWindows()
 
+
+# Web cam
+
+# cap = cv.VideoCapture(0)
+# cap.set(3, 640)         # width id
+# cap.set(4, 480)         # Height id
+# cap.set(10, 200)        # brightness id
+# while True:
+#     success, img = cap.read()            # returns bool value o and 1 based on whether it is successfully read or not
+#     cv.imshow("Result", img)
+#     if cv.waitKey(1) & 0xFF == ord('q'):
+#         break
